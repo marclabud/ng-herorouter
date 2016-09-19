@@ -2,7 +2,8 @@
 ng-heroRouter 0.8.0 
 Angular-Cli beta.14
 
-##ng build 
+##  (JIT) plattform-browser-dynamic 
+###ng build 
 
 Version: webpack 2.1.0-beta.22
 
@@ -499,3 +500,62 @@ WARNING in styles.012b02bc222923e983a1.bundle.js from UglifyJs
 Condition always false [styles.012b02bc222923e983a1.bundle.js:15,3]
 Dropping unreachable code [styles.012b02bc222923e983a1.bundle.js:17,1]
 Side effects in initialization of unused variable update [styles.012b02b
+
+
+##(AOT) plattform-browser
+ 
+###ng serve
+
+3844ms building modules
+16ms sealing
+0ms optimizing
+0ms basic module optimization
+47ms module optimization
+15ms advanced module optimization
+0ms basic chunk optimization
+0ms chunk optimization
+0ms advanced chunk optimization
+0ms module and chunk tree optimization
+78ms module reviving
+0ms module order optimization
+16ms module id optimization
+0ms chunk reviving
+0ms chunk order optimization
+0ms chunk id optimization
+31ms hashing
+0ms module assets processing
+63ms chunk assets processing
+0ms additional chunk assets processing
+0ms recording
+0ms additional asset processing
+922ms chunk asset optimization
+843ms asset optimization
+16ms emitting
+Hash: 935c0e3de820fd01f6ca
+Version: webpack 2.1.0-beta.22
+Time: 5906ms
+           Asset       Size  Chunks             Chunk Names
+      0.chunk.js    13.4 kB    0, 3  [emitted]
+  main.bundle.js    1.97 MB    1, 3  [emitted]  main
+styles.bundle.js      13 kB    2, 3  [emitted]  styles
+       inline.js    5.53 kB       3  [emitted]  inline
+           0.map    8.34 kB    0, 3  [emitted]
+        main.map    2.09 MB    1, 3  [emitted]  main
+      styles.map    17.9 kB    2, 3  [emitted]  styles
+      inline.map    5.59 kB       3  [emitted]  inline
+      index.html  494 bytes          [emitted]
+Child html-webpack-plugin for "index.html":
+         Asset     Size  Chunks       Chunk Names
+    index.html  2.84 kB       0
+
+###ng serve -prod
+
+Version: webpack 2.1.0-beta.22
+Time: 10389ms
+                                 Asset       Size  Chunks             Chunk Names
+       0.a0bf32d18e55d1d427ae.chunk.js     4.7 kB    0, 3  [emitted]
+   main.a0c0724b18b30f4930a5.bundle.js     617 kB    1, 3  [emitted]  main
+ styles.012b02bc222923e983a1.bundle.js    6.76 kB    2, 3  [emitted]  styles
+                             inline.js    1.41 kB       3  [emitted]  inline
+main.a0c0724b18b30f4930a5.bundle.js.gz     143 kB          [emitted]
+                            index.html  536 bytes          [emitted]
